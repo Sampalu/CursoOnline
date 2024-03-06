@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dbcaHHyqeYLQFDLTowt27kRH6+HSi2pjbuXGx8G5DcWydo9kG0/P8raho03XDDADYeyffOx5M85VpABTedV6jA==",
+  "dgSpecHash": "rLkRU+UAxxZ1J3xdW37rMfBUSVzsgJJs3VmlxGP/dxGL2CAqDFwUXmnngOkJycAyGrm5fii9jA2Hex6Af47p6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

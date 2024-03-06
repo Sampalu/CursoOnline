@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K8TIse+yDMul0XvCEv8kI5k4z+IsVANFnwJPwFFyK9eTV4ZhH1vLOroWlDfvhNeK/GmztXMq0ycSpzMcoGeWRw==",
+  "dgSpecHash": "TPbU+GzxdSsjPRJY2i+AjFVDS5Kv4ZMAQPuuRmPlsiTLflgAyjxGLMGp1eTb0sJpfQ5WR75RhNb3nyIRtgBLCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\test\\CursoOnline.Dominio.Test\\CursoOnline.Dominio.Test.csproj",
+  "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\test\\CursoOnline.Dominio.Test\\CursoOnline.Dominio.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\bogus\\35.4.1\\bogus.35.4.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

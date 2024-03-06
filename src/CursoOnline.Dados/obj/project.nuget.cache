@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AQ4hqTiO5clHvwy5iOPVsneNEoKrC1rTfy1UAWG6BtBMqT0acHKte3dEJ+shCeyXKG/qAdGRch5AL8YmgCNGcA==",
+  "dgSpecHash": "tY2cS3h9YTgPppAAG1Tjnqm0AhWIpbtaHlShFIzDlcNzJHIOjZqQIBgO3NQ1zyTnz0j+vVEHsuJpa8MaoXavjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj",
+  "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.27\\microsoft.entityframeworkcore.6.0.27.nupkg.sha512",

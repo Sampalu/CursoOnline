@@ -19,26 +19,23 @@
     <div class="row form-wrapper">
         <div class="col-md-12">
             <form id="form" class="form-horizontal" asp-action="Salvar" asp-controller="Curso" asp-antiforgery="false"
-                data-ajax="true" data-ajax-method="POST" data-ajax-success="window-location = '/Curso'">
+                data-ajax="true" data-ajax-method="POST" data-ajax-failure="formQuandoFalha" data-ajax-success="window-location = '/Curso'">
                 <div class="form-group">
                     <label class="col-md-2 control-label">Nome</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" asp-for="Nome" />
-                        <span asp-validation-for="Nome" class="text-danger"></span>
+                        <input type="text" class="form-control" asp-for="Nome" data-val="false" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label">Descrição</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" asp-for="Descricao" />
-                        <span asp-validation-for="Descricao" class="text-danger"></span>
+                        <input type="text" class="form-control" asp-for="Descricao" data-val="false" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label">Carga Horária</label>
                     <div class="col-md-2">
-                        <input type="text" class="form-control" asp-for="CargaHoraria" />
-                        <span asp-validation-for="CargaHoraria" class="text-danger"></span>
+                        <input type="text" class="form-control" asp-for="CargaHoraria" data-val="false" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -55,7 +52,7 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label">Valor</label>
                     <div class="col-md-2">
-                        <input class="form-control" asp-for="Valor" />
+                        <input class="form-control" asp-for="Valor" data-val="false" />
                         <span asp-validation-for="Valor" class="text-danger"></span>
                     </div>
                 </div>
@@ -69,8 +66,9 @@
     </div>
 </div>
 
-@section Scripts {
+@section Scripts { 
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/js/excecaoDeDominio.js"></script>
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj": {}
+    "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj": {
+    "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj",
         "projectName": "CursoOnline.Dados",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\obj\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj"
+              "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
+    "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
         "projectName": "CursoOnline.Dominio",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj": {
+    "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj",
         "projectName": "CursoOnline.Ioc",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Ioc\\obj\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Ioc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -173,11 +173,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj"
+              "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dados\\CursoOnline.Dados.csproj"
               },
-              "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj"
+              "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj"
               }
             }
           }
@@ -229,14 +229,14 @@
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj": {
+    "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj",
         "projectName": "CursoOnline.Web",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Web\\obj\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -258,11 +258,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj"
+              "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj"
               },
-              "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj"
+              "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Ioc\\CursoOnline.Ioc.csproj"
               }
             }
           }

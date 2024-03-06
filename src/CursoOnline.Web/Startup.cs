@@ -1,5 +1,6 @@
 ﻿using CursoOnline.Dominio.Base;
 using CursoOnline.Ioc;
+using CursoOnline.Web.Filters;
 using Microsoft.Extensions.Configuration;
 
 namespace CursoOnline.Web
@@ -18,7 +19,10 @@ namespace CursoOnline.Web
             StartupIoc.ConfigureServices(services, Configuration);
 
             services.AddRazorPages();
-            services.AddMvc(opt => opt.EnableEndpointRouting = false);
+            services.AddMvc(opt => {
+                opt.EnableEndpointRouting = false;
+                opt.Filters.Add(typeof(CustomExceptionFilter));
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -31,18 +35,19 @@ namespace CursoOnline.Web
                 unitOfWork.Commit();
             });
 
-            if (env.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Error");
-                //The default HSTS value is 30 days.You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
-
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseExceptionHandler("/Error");
+            //    //The default HSTS value is 30 days.You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            //    app.UseHsts();
+            //}
+            //else
+            //{
+            //    app.UseExceptionHandler("/Error");
+            //    app.UseHsts();
+            //}
+            app.UseDeveloperExceptionPage();
+            app.UseHsts();
             app.UseMvcWithDefaultRoute();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
