@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "i": "^0.3.7",
+    "jquery-ajax-unobtrusive": "^3.2.6",
+    "jquery-validation-unobtrusive": "^4.0.0",
+    "npm": "^10.5.0"
+  }
+}
