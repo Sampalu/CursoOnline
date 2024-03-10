@@ -58,7 +58,7 @@ namespace CursoOnline.Dominio.Test.Cursos
         [InlineData(null)]
         public void NaoDeveCursoTerNomeInvalido(string nomeInvalido)
         {
-            Assert.Throws<ExceptionDeDominio>(() =>
+            Assert.Throws<ExcecaoDeDominio>(() =>
                 CursoBuilder.Novo().ComNome(nomeInvalido).Build())
                 .ComMensagem("Nome inválido");
         }
@@ -69,7 +69,7 @@ namespace CursoOnline.Dominio.Test.Cursos
         [InlineData(-100)]
         public void NaoDeveCursoTerUmaCargaHorariaMenorQue1(double cargaHorariaInvalida)
         {
-            Assert.Throws<ExceptionDeDominio>(() =>
+            Assert.Throws<ExcecaoDeDominio>(() =>
                 CursoBuilder.Novo().ComCargaHoraria(cargaHorariaInvalida).Build())
                 .ComMensagem("Carga horária inválida");
         }
@@ -80,8 +80,80 @@ namespace CursoOnline.Dominio.Test.Cursos
         [InlineData(-100)]
         public void NaoDeveCursoTerUmValorMenorQue1(double valorInvalido)
         {
-            Assert.Throws<ExceptionDeDominio>(() =>
+            Assert.Throws<ExcecaoDeDominio>(() =>
                 CursoBuilder.Novo().ComValor(valorInvalido).Build())
+                .ComMensagem("Valor inválido");
+        }
+
+        [Fact]
+        public void DeveAlterarNome()
+        {
+            var nomeEsperado = "João";
+
+            var curso = CursoBuilder.Novo().Build();
+
+            curso.AlterarNome(nomeEsperado);
+
+            Assert.Equal(nomeEsperado, curso.Nome);
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        public void NaoDeveAlterarCursoComNomeInvalido(string nomeInvalido)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<ExcecaoDeDominio>(() => curso.AlterarNome(nomeInvalido))                
+                .ComMensagem("Nome inválido");
+        }
+
+
+
+        [Fact]
+        public void DeveAlterarCargaHoraria()
+        {
+            double cargaHorariaEsperada = 20;
+
+            var curso = CursoBuilder.Novo().Build();
+
+            curso.AlterarCargaHoraria(cargaHorariaEsperada);
+
+            Assert.Equal(cargaHorariaEsperada, curso.CargaHoraria);
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-2)]
+        [InlineData(-100)]
+        public void NaoDeveAlterarCursoComCargaHorariaInvalida(double cargaHorariaInvalida)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<ExcecaoDeDominio>(() => curso.AlterarCargaHoraria(cargaHorariaInvalida))
+                .ComMensagem("Carga horária inválida");
+        }
+
+        public void DeveAlterarValor()
+        {
+            double valorEsperado = 200;
+
+            var curso = CursoBuilder.Novo().Build();
+
+            curso.AlterarValor(valorEsperado);
+
+            Assert.Equal(valorEsperado, curso.Valor);
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-2)]
+        [InlineData(-100)]
+        public void NaoDeveAlterarCursoComValorMenorQue1(double valorInvalido)
+        {
+            var curso = CursoBuilder.Novo().Build();
+
+            Assert.Throws<ExcecaoDeDominio>(() => curso.AlterarValor(valorInvalido))               
                 .ComMensagem("Valor inválido");
         }
     }

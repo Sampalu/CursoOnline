@@ -31,15 +31,15 @@ namespace CursoOnline.Dominio.Base
         public void DispararExcecaoSeExistir()
         {
             if (_mensagensDeErros.Any())
-                throw new ExceptionDeDominio(_mensagensDeErros);
+                throw new ExcecaoDeDominio(_mensagensDeErros);
         }
     }
 
-    public class ExceptionDeDominio : ArgumentException
+    public class ExcecaoDeDominio : ArgumentException
     {
         public List<string> MensagensDeErro { get; set; }
 
-        public ExceptionDeDominio(List<string> mensagensDeErros)
+        public ExcecaoDeDominio(List<string> mensagensDeErros)
         {
             MensagensDeErro = mensagensDeErros;
         }
