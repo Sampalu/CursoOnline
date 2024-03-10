@@ -58,7 +58,7 @@ namespace CursoOnline.Dominio.Test.Cursos
             _cursoDTO.PublicoAlvo = publicoAlvoInvalido;
 
             Assert.Throws<ExcecaoDeDominio>(() => _armazenadorDeCurso.Armazenar(_cursoDTO))
-                .ComMensagem("Público Alvo inválido");
+                .ComMensagem(Resource.PublicoAlvoInvalido);
         }
 
         [Fact]
@@ -68,7 +68,34 @@ namespace CursoOnline.Dominio.Test.Cursos
             _cursoRepositorioMock.Setup(r => r.ObterPeloNome(_cursoDTO.Nome)).Returns(cursoJaSalvo);
 
             Assert.Throws<ExcecaoDeDominio>(() => _armazenadorDeCurso.Armazenar(_cursoDTO))
-                .ComMensagem("Nome do curso já consta no banco de dados");
+                .ComMensagem(Resource.NomeCursoJaExiste);
+        }
+
+        [Fact]
+        public void DeveAlterarDadosDoCurso()
+        {
+            _cursoDTO.Id = 323;
+            var curso = CursoBuilder.Novo().Build();
+            _cursoRepositorioMock.Setup(r => r.ObterPorId(_cursoDTO.Id)).Returns(curso);
+
+            _armazenadorDeCurso.Armazenar(_cursoDTO);
+
+            Assert.Equal(_cursoDTO.Nome, curso.Nome);
+            Assert.Equal(_cursoDTO.Valor, curso.Valor);
+            Assert.Equal(_cursoDTO.CargaHoraria, curso.CargaHoraria);
+        }
+
+        [Fact]
+        public void NaoDeveAdicionarNoRepositorioQuandoCursoJaExiste()
+        {
+            _cursoDTO.Id = 323;
+            var curso = CursoBuilder.Novo().Build();
+            _cursoRepositorioMock.Setup(r => r.ObterPorId(_cursoDTO.Id)).Returns(curso);
+
+            _armazenadorDeCurso.Armazenar(_cursoDTO);
+
+            _cursoRepositorioMock.Verify(r => r.Adicionar(It.IsAny<Curso>()), Times.Never);
+
         }
     }
 }

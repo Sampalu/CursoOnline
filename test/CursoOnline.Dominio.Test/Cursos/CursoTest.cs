@@ -60,7 +60,7 @@ namespace CursoOnline.Dominio.Test.Cursos
         {
             Assert.Throws<ExcecaoDeDominio>(() =>
                 CursoBuilder.Novo().ComNome(nomeInvalido).Build())
-                .ComMensagem("Nome inválido");
+                .ComMensagem(Resource.NomeInvalido);
         }
 
         [Theory]
@@ -71,7 +71,7 @@ namespace CursoOnline.Dominio.Test.Cursos
         {
             Assert.Throws<ExcecaoDeDominio>(() =>
                 CursoBuilder.Novo().ComCargaHoraria(cargaHorariaInvalida).Build())
-                .ComMensagem("Carga horária inválida");
+                .ComMensagem(Resource.CargaHorariaInvalida);
         }
 
         [Theory]
@@ -82,7 +82,7 @@ namespace CursoOnline.Dominio.Test.Cursos
         {
             Assert.Throws<ExcecaoDeDominio>(() =>
                 CursoBuilder.Novo().ComValor(valorInvalido).Build())
-                .ComMensagem("Valor inválido");
+                .ComMensagem(Resource.ValorInvalido);
         }
 
         [Fact]
@@ -105,7 +105,7 @@ namespace CursoOnline.Dominio.Test.Cursos
             var curso = CursoBuilder.Novo().Build();
 
             Assert.Throws<ExcecaoDeDominio>(() => curso.AlterarNome(nomeInvalido))                
-                .ComMensagem("Nome inválido");
+                .ComMensagem(Resource.NomeInvalido);
         }
 
 
@@ -131,7 +131,7 @@ namespace CursoOnline.Dominio.Test.Cursos
             var curso = CursoBuilder.Novo().Build();
 
             Assert.Throws<ExcecaoDeDominio>(() => curso.AlterarCargaHoraria(cargaHorariaInvalida))
-                .ComMensagem("Carga horária inválida");
+                .ComMensagem(Resource.CargaHorariaInvalida);
         }
 
         public void DeveAlterarValor()
@@ -154,7 +154,7 @@ namespace CursoOnline.Dominio.Test.Cursos
             var curso = CursoBuilder.Novo().Build();
 
             Assert.Throws<ExcecaoDeDominio>(() => curso.AlterarValor(valorInvalido))               
-                .ComMensagem("Valor inválido");
+                .ComMensagem(Resource.ValorInvalido);
         }
     }
 }
