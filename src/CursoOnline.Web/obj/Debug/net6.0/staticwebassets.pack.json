@@ -237,6 +237,18 @@
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+      "Id": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\wwwroot\\lib\\jquery.maskedinput.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.maskedinput.min.js"
+    },
+    {
+      "Id": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\wwwroot\\lib\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\wwwroot\\lib\\jquery.priceformat.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.priceformat.min.js"
+    },
+    {
       "Id": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },

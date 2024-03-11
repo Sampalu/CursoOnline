@@ -6,6 +6,7 @@ using Xunit;
 using Xunit.Abstractions;
 using Bogus;
 using CursoOnline.Dominio.Base;
+using CursoOnline.Dominio.PublicosAlvo;
 
 namespace CursoOnline.Dominio.Test.Cursos
 {

@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CursoOnline.Dominio.Base
+﻿namespace CursoOnline.Dominio.Base
 {
     public class ValidadorDeRegra
     {
-        private List<string> _mensagensDeErros;
+        private readonly List<string> _mensagensDeErros;
 
         private ValidadorDeRegra()
         {
             _mensagensDeErros = new List<string>();
         }
+
         public static ValidadorDeRegra Novo()
         {
             return new ValidadorDeRegra();

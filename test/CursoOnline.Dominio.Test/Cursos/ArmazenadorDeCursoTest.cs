@@ -1,6 +1,7 @@
 ﻿using Bogus;
 using CursoOnline.Dominio.Base;
 using CursoOnline.Dominio.Cursos;
+using CursoOnline.Dominio.PublicosAlvo;
 using CursoOnline.Dominio.Test.Builders;
 using CursoOnline.Dominio.Test.Util;
 using Moq;
@@ -64,11 +65,11 @@ namespace CursoOnline.Dominio.Test.Cursos
         [Fact]
         public void NaoDeveAdicionarCursoComMesmoNome()
         {
-            var cursoJaSalvo = CursoBuilder.Novo().ComNome(_cursoDTO.Nome).Build();
+            var cursoJaSalvo = CursoBuilder.Novo().ComId(432).ComNome(_cursoDTO.Nome).Build();
             _cursoRepositorioMock.Setup(r => r.ObterPeloNome(_cursoDTO.Nome)).Returns(cursoJaSalvo);
 
             Assert.Throws<ExcecaoDeDominio>(() => _armazenadorDeCurso.Armazenar(_cursoDTO))
-                .ComMensagem(Resource.NomeCursoJaExiste);
+                .ComMensagem(Resource.NomeDoCursoJaExiste);
         }
 
         [Fact]

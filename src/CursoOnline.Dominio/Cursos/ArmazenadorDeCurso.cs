@@ -1,5 +1,5 @@
 ﻿using CursoOnline.Dominio.Base;
-using System;
+using CursoOnline.Dominio.PublicosAlvo;
 
 namespace CursoOnline.Dominio.Cursos
 {
@@ -17,7 +17,7 @@ namespace CursoOnline.Dominio.Cursos
             var cursoJaSalvo = _cursoRepositorio.ObterPeloNome(cursoDTO.Nome);
 
             ValidadorDeRegra.Novo()
-                .Quando(cursoJaSalvo != null, Resource.NomeCursoJaExiste)
+                .Quando(cursoJaSalvo != null && cursoJaSalvo.Id != cursoDTO.Id, Resource.NomeDoCursoJaExiste)
                 .Quando(!Enum.TryParse<PublicoAlvo>(cursoDTO.PublicoAlvo, out var publicoAlvo), Resource.PublicoAlvoInvalido)
                 .DispararExcecaoSeExistir();
 

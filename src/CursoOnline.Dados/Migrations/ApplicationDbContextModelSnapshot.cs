@@ -18,6 +18,32 @@ namespace CursoOnline.Dados.Migrations
                 .HasAnnotation("ProductVersion", "6.0.27")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("CursoOnline.Dominio.Alunos.Aluno", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Cpf")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("PublicoAlvo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Alunos");
+                });
+
             modelBuilder.Entity("CursoOnline.Dominio.Cursos.Curso", b =>
                 {
                     b.Property<int>("Id")
@@ -44,6 +70,61 @@ namespace CursoOnline.Dados.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Cursos");
+                });
+
+            modelBuilder.Entity("CursoOnline.Dominio.Matriculas.Matricula", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AlunoId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Cancelada")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("CursoConcluido")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("CursoId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("NotaDoAluno")
+                        .HasColumnType("double");
+
+                    b.Property<bool>("TemDesconto")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<double>("ValorPago")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlunoId");
+
+                    b.HasIndex("CursoId");
+
+                    b.ToTable("Matriculas");
+                });
+
+            modelBuilder.Entity("CursoOnline.Dominio.Matriculas.Matricula", b =>
+                {
+                    b.HasOne("CursoOnline.Dominio.Alunos.Aluno", "Aluno")
+                        .WithMany()
+                        .HasForeignKey("AlunoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CursoOnline.Dominio.Cursos.Curso", "Curso")
+                        .WithMany()
+                        .HasForeignKey("CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Aluno");
+
+                    b.Navigation("Curso");
                 });
 #pragma warning restore 612, 618
         }
