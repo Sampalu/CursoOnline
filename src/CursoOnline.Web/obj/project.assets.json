@@ -289,6 +289,36 @@
           }
         }
       },
+      "Polly/7.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Polly.Caching.Memory/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "3.0.0",
+          "Polly": "7.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Polly.Caching.Memory.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Polly.Caching.Memory.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
         "type": "package",
         "dependencies": {
@@ -769,6 +799,41 @@
         "mysqlconnector.nuspec"
       ]
     },
+    "Polly/7.1.1": {
+      "sha512": "okRGHVvn0bGCeMBgaCZShlSez8rxjgthyDf/NRTYsSh5kb8IbKnX7W15d3s95Kq9uzwj7tFYiXNrCvn6d0XoeA==",
+      "type": "package",
+      "path": "polly/7.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.1.1.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
+    "Polly.Caching.Memory/3.0.2": {
+      "sha512": "kHMfuF+pnEBGIdge8A7NBmLkDqsTdEWjpd3mgxpe31sHxOH6x25nRnXDg2HeSDX/VTWv/QbFFpFMfpP+tQCw5w==",
+      "type": "package",
+      "path": "polly.caching.memory/3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.3/Polly.Caching.Memory.dll",
+        "lib/netstandard1.3/Polly.Caching.Memory.pdb",
+        "lib/netstandard1.3/Polly.Caching.Memory.xml",
+        "lib/netstandard2.0/Polly.Caching.Memory.dll",
+        "lib/netstandard2.0/Polly.Caching.Memory.pdb",
+        "lib/netstandard2.0/Polly.Caching.Memory.xml",
+        "lib/netstandard2.1/Polly.Caching.Memory.dll",
+        "lib/netstandard2.1/Polly.Caching.Memory.pdb",
+        "lib/netstandard2.1/Polly.Caching.Memory.xml",
+        "polly.caching.memory.3.0.2.nupkg.sha512",
+        "polly.caching.memory.nuspec"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
       "sha512": "KvlZ800CnEuEGnxj5OT1fCKGjQXxW5kpPlCP91JqBYG+2Z3927eqXmlX6LLKUt4swqE8ZsEQ+Zkpab8bqstf4g==",
       "type": "package",
@@ -876,7 +941,8 @@
     "net6.0": [
       "CursoOnline.Dominio >= 1.0.0",
       "CursoOnline.Ioc >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.27"
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.27",
+      "Polly.Caching.Memory >= 3.0.2"
     ]
   },
   "packageFolders": {
@@ -936,6 +1002,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.27, )"
+          },
+          "Polly.Caching.Memory": {
+            "target": "Package",
+            "version": "[3.0.2, )"
           }
         },
         "imports": [

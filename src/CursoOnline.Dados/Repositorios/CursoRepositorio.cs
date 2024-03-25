@@ -20,5 +20,11 @@ namespace CursoOnline.Dados.Repositorios
             var entidade = Context.Set<Curso>().Where(c => c.Nome.Contains(nome));
             return entidade.FirstOrDefault();
         }
+
+        public Curso? ObterPeloNomeAsync(string nome)
+        {
+            var entidade = Context.Set<Curso>().Where(c => c.Nome.Contains(nome));
+            return entidade.FirstOrDefault();
+        }
     }
 }

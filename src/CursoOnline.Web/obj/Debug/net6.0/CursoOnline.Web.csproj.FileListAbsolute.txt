@@ -103,3 +103,5 @@ C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\obj\Debu
 C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\obj\Debug\net6.0\CursoOnline.Web.genruntimeconfig.cache
 C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\obj\Debug\net6.0\ref\CursoOnline.Web.dll
 C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\obj\Debug\net6.0\scopedcss\Views\Aluno\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\bin\Debug\net6.0\Polly.dll
+C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\bin\Debug\net6.0\Polly.Caching.Memory.dll

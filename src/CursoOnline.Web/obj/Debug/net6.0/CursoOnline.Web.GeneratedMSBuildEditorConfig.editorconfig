@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CursoOnline.Web
 build_property.RootNamespace = CursoOnline.Web
-build_property.ProjectDir = C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\
+build_property.ProjectDir = c:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web
+build_property.MSBuildProjectDirectory = c:\Users\andre\source\repos\CursoOnline\CursoOnline\src\CursoOnline.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Error.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Privacy.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/_ViewImports.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/_ViewStart.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/Index.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/NovoOuEditar.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/NovoOuEditar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cTm92b091RWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/_ViewImports.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/_ViewStart.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/Index.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/NovoOuEditar.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/NovoOuEditar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cTm92b091RWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/_ViewImports.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/_ViewStart.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Matricula/Index.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Matricula/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Matricula/Nova.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Matricula/Nova.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXE5vdmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Shared/_Layout.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kwj9eovqqx
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/Shared/_Layout.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Aluno/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xkj2evpc8w
 
-[C:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/Shared/_Layout.cshtml]
+[c:/Users/andre/source/repos/CursoOnline/CursoOnline/src/CursoOnline.Web/Views/Curso/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i01vvohvaz

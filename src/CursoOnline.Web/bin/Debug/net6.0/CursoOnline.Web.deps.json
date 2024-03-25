@@ -10,7 +10,8 @@
         "dependencies": {
           "CursoOnline.Dominio": "1.0.0",
           "CursoOnline.Ioc": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Design": "6.0.27"
+          "Microsoft.EntityFrameworkCore.Design": "6.0.27",
+          "Polly.Caching.Memory": "3.0.2"
         },
         "runtime": {
           "CursoOnline.Web.dll": {}
@@ -150,6 +151,26 @@
           "lib/net6.0/MySqlConnector.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "Polly/7.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.1.1.0"
+          }
+        }
+      },
+      "Polly.Caching.Memory/3.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "6.0.1",
+          "Polly": "7.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Polly.Caching.Memory.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.2.0"
           }
         }
       },
@@ -337,6 +358,20 @@
       "sha512": "sha512-JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
       "path": "mysqlconnector/2.1.2",
       "hashPath": "mysqlconnector.2.1.2.nupkg.sha512"
+    },
+    "Polly/7.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okRGHVvn0bGCeMBgaCZShlSez8rxjgthyDf/NRTYsSh5kb8IbKnX7W15d3s95Kq9uzwj7tFYiXNrCvn6d0XoeA==",
+      "path": "polly/7.1.1",
+      "hashPath": "polly.7.1.1.nupkg.sha512"
+    },
+    "Polly.Caching.Memory/3.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kHMfuF+pnEBGIdge8A7NBmLkDqsTdEWjpd3mgxpe31sHxOH6x25nRnXDg2HeSDX/VTWv/QbFFpFMfpP+tQCw5w==",
+      "path": "polly.caching.memory/3.0.2",
+      "hashPath": "polly.caching.memory.3.0.2.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
       "type": "package",

@@ -23,6 +23,12 @@ namespace CursoOnline.Dados.Repositorios
             return query.Any() ? query.First() : null;
         }
 
+        public virtual async Task<List<TEntidade>> ConsultarAsync()
+        {
+            var entidades = Context.Set<TEntidade>().ToList();
+            return entidades.Any() ? entidades : new List<TEntidade>();
+        }
+
         public virtual List<TEntidade> Consultar()
         {
             var entidades = Context.Set<TEntidade>().ToList();

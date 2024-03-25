@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3xP55cfIsVRYuUElWM9ANQ3GnDtePgXmcKZo1X3AXTKso+y6gsguosqA24/lxmJZeYQixP0lZrvn4KnCJc/bgw==",
+  "dgSpecHash": "wFQ464/NFSPpFQHiOvISbBu6TycWIKDRfyYezXKRubsu769ZSuaFlx+fltJGvtwMu5wFyStutIfyr69i+RB02g==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\CursoOnline\\CursoOnline\\src\\CursoOnline.Web\\CursoOnline.Web.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,8 @@
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\polly\\7.1.1\\polly.7.1.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\polly.caching.memory\\3.0.2\\polly.caching.memory.3.0.2.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.2\\pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",

@@ -2,6 +2,12 @@
 using CursoOnline.Dominio.Cursos;
 using CursoOnline.Web.Util;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
+using Polly;
+using Polly.Caching;
+using Polly.Caching.Memory;
+using Polly.Registry;
+using System.Net.Http;
 
 namespace CursoOnline.Web.Controllers
 {
@@ -9,16 +15,24 @@ namespace CursoOnline.Web.Controllers
     {
         private readonly ArmazenadorDeCurso _armazenadorDeCurso;
         private readonly IRepositorio<Curso> _cursoRepositorio;
+        private readonly IAsyncPolicy<List<Curso>> _cachePolicy;
 
-        public CursoController(ArmazenadorDeCurso armazenadorDeCurso, IRepositorio<Curso> cursoRepositorio) 
+        public CursoController(ArmazenadorDeCurso armazenadorDeCurso, IRepositorio<Curso> cursoRepositorio
+            , IReadOnlyPolicyRegistry<string> policyRegistry) 
         { 
             _armazenadorDeCurso = armazenadorDeCurso;
             _cursoRepositorio = cursoRepositorio;
+
+            _cachePolicy = policyRegistry.Get<IAsyncPolicy<List<Curso>>>("CachingPolicy2");
         }
 
         public IActionResult Index()
         {
-            var cursos = _cursoRepositorio.Consultar();
+            var result = _cachePolicy.ExecuteAndCaptureAsync(context => 
+                _cursoRepositorio.ConsultarAsync()
+            , new Context("KeyForSomething"));
+
+            var cursos = result.Result.Result;                                
 
             if (cursos.Any())
             {
